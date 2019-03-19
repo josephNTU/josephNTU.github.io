@@ -1,8 +1,19 @@
 h1 {
     color: blue;
     font-size: 50px;
+    font-style: initial
 }
 
 img {
     width: 400px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 10px 10px 18px 0px grey;
+    border-radius: 13px;
+}
+
+a {
+    font-size: 25px;
+    color: brown;
+    font-style: normal
 }

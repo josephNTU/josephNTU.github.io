@@ -5,14 +5,14 @@ table {
 th {
     border-color: #001aff;
     background: rgb(80, 14, 14);
-    background-image: url(./圖片/234.jpg);
+    background-image: url(../圖片/234.jpg);
     color: white;
 }
 
 td {
     border-color: #001aff;
     color: white;
-    background-image: url(./圖片/123.jpg);
+    background-image: url(../圖片/123.jpg);
     width: 130px
 }
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interest</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Interest.css">
+    <script>
+        show_basketball = function(tag) {
+            if (tag) document.getElementById('basketball').style.display = 'block';
+            else document.getElementById('basketball').style.display = 'none';
+        }
+        show_onlinegame = function(tag) {
+            if (tag) document.getElementById('onlinegame').style.display = 'block';
+            else document.getElementById('onlinegame').style.display = 'none';
+        }
+        show_novel = function(tag) {
+            if (tag) document.getElementById('novel').style.display = 'block';
+            else document.getElementById('novel').style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <ul class="nav justify-content-center" style="background:transparent;box-shadow: 0px 3px 8px 0px #000">
+        <li class="nav-item">
+            <a class="nav-link" href="./Home.html" style="color:rgb(255, 255, 255)">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Education.html" style="color:rgb(255, 255, 255)">Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Interest.html" style="color:rgb(255, 255, 255)">Interst</a>
+        </li>
+    </ul>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 rounded" style="background-image: url(./photo2.jpg) ;background-size: cover ;height: 250px;margin:0px;padding: 0px" onmouseover="show_basketball(true)" onmouseout="show_basketball()">
+                <div class="rounded" style="background-image: url(./jpg2.jpg) ;background-size: cover;display:none;width:100%;height: 250px;text-align: center;" id="basketball">
+                    <h1>Basketball</h1>
+                    <p>I have played basketball since I was in elementary school</p>
+                    <p>And now I usually play basketball on Sunday afternoons</p>
+                    <p>Besides, I also like to watch NBA</p>
+                    <p>Leborn James is my favorite player</p>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 rounded" style="background-image: url(./photo3.jpg);background-size: cover ;height: 250px;margin:0px;padding: 0px" onmouseover="show_onlinegame(true)" onmouseout="show_onlinegame()">
+                <div class="rounded" style="background-image: url(./jpg2.jpg) ;background-size: cover;display:none;width:100%;height: 250px;text-align: center;margin:0px;padding: 0px" id="onlinegame">
+                    <h1>Online Game</h1>
+                    <p>I really like to play online games</p>
+                    <p>I even build my computer on my own</p>
+                    <p>The games I play most often now are LOL,Overwatch,and Hearthstone</p>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 rounded" style="background-image: url(./photo1.jpg);background-size: cover ;height: 250px;margin:0px;padding: 0px" onmouseover="show_novel(true)" onmouseout="show_novel()">
+                <div class="rounded" style="background-image: url(./jpg2.jpg) ;background-size: cover;display:none;width:100%;height: 250px;text-align: center;" id="novel">
+                    <h1>Novel</h1>
+                    <p>I often read novels in my leisure time</p>
+                    <p>I used to read western novels,such as "The Hunger Games"</p>
+                    <p>Now i prefer to read light novel</p>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>

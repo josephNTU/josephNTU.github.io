@@ -1,0 +1,20 @@
+.row {
+    margin-top: 50px;
+}
+
+.nav-link:hover {
+    background-image: url(./homepage4.jpg);
+    color: rgb(202, 19, 19);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(./homepage6.jpg)center center fixed no-repeat;
+    background-size: cover;
+}
+
+p,
+h1 {
+    color: brown;
+}
